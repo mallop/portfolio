@@ -31,4 +31,5 @@ I am Biomedical engineer, with specialization in Informatics in medicine. I'm in
 <ul>
    <li> <a href= "https://github.com/mallop/portfolio/tree/mallop-project1/Matlab_cosfire_filters/Matlab_cosfire_filters"> Trainable COSFIRE filters for vessel delineation with application to retinal images (Matlab, html) </a> </li>
    <li> <a href= "https://github.com/mallop/portfolio/tree/mallop-project1/Java_game/GameJava"> Game in Java </a> </li> 
+   <li> <a href= "https://github.com/mallop/portfolio/tree/mallop-project1/Matlab_feature_extraction/Matlab_feature_extraction">Feature extraction based on the fingerprints </a> </li>
  </ul>
