@@ -1,3 +1,3 @@
 # portfolio
 
-[Trainable cosfire filters ] https://github.com/mallop/portfolio/tree/mallop-project1
+ <a href= "https://github.com/mallop/portfolio/tree/mallop-project1"> Trainable COSFIRE filters for vessel delineation with application to retinal images </a>
