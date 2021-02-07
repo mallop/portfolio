@@ -1,0 +1,116 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pl" >
+<head>
+    <title>referencje</title>
+    <meta name="description" content="projekt riao" />  
+    <meta name="keywords" content="HTML,CSS,XML"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <meta name="RiAO" content="2017"/>
+    <link rel="Stylesheet" href="sstyle.css" />
+</head>
+<body background= "tlo2.png">
+
+	
+	
+	<div id="dokument">
+	
+	
+	<div id="naglowek">
+        
+  
+        
+<div style="position:absolute;width:400px;height:200px;"><img src="01_test_mask.gif" width="1100" height="300" /><div style="position:absolute;right:-700px;bottom:-30px;">
+<h1>Trainable COSFIRE filters for vessel delineation with application to retinal images</h1></div></div>
+		 </div> 
+	
+    <div id="kol_prawa">
+	<ol>
+	
+         <li>   <a href="index.html"  class="active">strona główna </a> </li> 
+		 
+		<li>	 <a href="#">laboratorium </a>	
+		<ul>
+		<li>	 <a href="lab1.html">laboratorium 1</a>	</li>
+		<li>	 <a href="lab2.html">laboratorium 2</a>	</li>
+		<li>	 <a href="lab3.html">laboratorium 3</a>	</li>
+		 <li><a href="lab4.html">laboratorium 4 i 5</a>	</li>
+            <li><a href="lab6.html">laboratorium 6</a>	</li>
+		</ul>
+        </li>		
+			
+		<li>    <a href="ref.html">referencje</a> </li>
+		<li>	 <a href="my.html">o nas</a>	</li>
+		 
+    </ol>
+  
+		
+	</div>
+	
+		
+		<h4 style="text-indent: 1in;">
+Podczas drugich zajęć laboratoryjnych zajmowałyśmy się analizowaniem obrazów przy użyciu filtrów COSFIRE.
+
+<br/>
+            </h4>
+        <h4 style="text-indent: 1in;">
+            B-COSFIRE- Bar-Selective Combination Of Shifted FIlter REsponses.
+            </h4>
+        <h4 style="text-indent: 1in;">
+            Filtr B-COSFIRE jest oparty na idei COSFIRE[1]. 
+            Świetnie nadaje się do wykrywania elementów przypominających kształtem pręty takich jak np. naczynia krwionośne. 
+            Dlatego został użyty do segmentacji naczyń krwionośnych siatkówki.
+            Filtr B-COSFIRE jest nieliniowy. Osiąga on   selektywność orientacji, mnożąc wynik grupy filtrów różnicowych Gaussa (DoG).
+            Charakteryzuje się tolerancją odchyleń i niewielką deformacją. 
+            Sektywność filtru nie jest z góry ustalona w implementacji, ale określana przez użytkownika. 
+            Istniją filtry symetryczne wrażliwe na elementy w kształcie pręta, oraz niesymetryczne rozpoznawające ich zakończenia.
+            Istnieje duży bank filtrów B-COSFIRE, składający się z 21 detektorów naczyń[2], które używane są dla rozpoznawania naczyń o różnych grubościach oraz 21 detektów ich zakończeń.
+            </h4>
+        <h4> Kody, które wykorzystywałyśmy, są ze <a href="https://www.mathworks.com/matlabcentral/fileexchange/49172-trainable-cosfire-filters-for-vessel-delineation-with-application-to-retinal-images">
+                strony.
+            </a>.
+
+            <br />
+            Do analizy wykorzystałyśmy następujący obraz siatkówki <br />
+            <center><img src="oko.png" width="300" height="300" /></center></br>
+
+
+            Opis funkcji: <br />
+
+            output <br />      A struct that contains the BCOSFIRE filters response
+            and the final segmented image. In details<br />
+            - output.respimage: response of the combination of a symmetric and an
+            asymemtric COSFIRE filters<br />
+            - output.segmented: the binary output image after
+            thresholding
+
+            <br />
+            <br />
+            Rezultat działania funkcji
+            <center><img src="B-COSFIRE response image.png" width="300" height="300" /></center></br>
+            Obraz stanowi odpowiedź na filtr B-COSFIRE. W trakcie laboratorium zmieniałyśmy parametry filtru, czego efekty są widoczne poniżej.
+            Niestety, nie zdążyłyśmy wykonać zbyt wielu filtracji ze względu na początkowe problemy techniczne. Próbowałyśmy wykonać operacje w domu na środowisku Octave,
+            lecz niestety funkcja "adapthisteq" jest brakującą funkcją pakietu "image".<br />
+            Symmetric filter params<br />
+            symmfilter.alpha = 0.9;<br />
+            <center><img src="alpha0,9.png" width="300" height="300" /></center></br>
+            Asymmetric filter params<br />
+            asymmfilter.sigma= 0.9;<br />
+            <center><img src="sigma0,9.png" width="300" height="300" /></center></br>
+
+
+            Na przefiltrowanych obrazach sieć naczyń krwionośnych w siatkówce oka jest bardziej widoczna. Dokładność wynika z doboru odpowiednich paramtrów. Widać tu spełnienie funkcjonalności filtru COSFIRE.
+            <br />
+
+
+
+
+        </h4>
+  
+
+
+ <div id="stopka">
+ <br/>
+        <h3> Rekonstrukcja i analiza obrazów 2017 </h3>
+    </div>
+</body>
+</html>

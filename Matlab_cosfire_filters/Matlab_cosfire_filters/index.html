@@ -1,0 +1,147 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pl" >
+<head>
+    <title>strona główna</title>
+    <meta name="description" content="projekt riao" />  
+    <meta name="keywords" content="HTML,CSS,XML"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <meta name="RiAO" content="2017"/>
+    <link rel="Stylesheet" href="sstyle.css" />
+</head>
+<body background= "tlo2.png">
+
+	
+	
+	<div id="dokument">
+	
+	<div id="naglowek">
+        
+  
+        
+<div style="position:absolute;width:400px;height:200px;"><img src="01_test_mask.gif" width="1100" height="300" /><div style="position:absolute;right:-700px;bottom:-30px;">
+<h1>Trainable COSFIRE filters for vessel delineation with application to retinal images</h1></div></div>
+		 </div> 
+	
+    <div id="kol_prawa">
+		<ol>
+	
+         <li>   <a href="index.html"  class="active">strona główna </a> </li> 
+		 
+		<li>	 <a href="#">laboratorium </a>	
+		<ul>
+		<li>	 <a href="lab1.html">laboratorium 1</a>	</li>
+		<li>	 <a href="lab2.html">laboratorium 2</a>	</li>
+	    <li>     <a href="lab3.html">laboratorium 3</a>	</li>
+		 <li><a href="lab4.html">laboratorium 4 i 5</a>	</li>
+            <li><a href="lab6.html">laboratorium 6</a>	</li>
+		</ul>
+        </li>		
+			 	
+		<li>    <a href="ref.html">referencje</a> </li>
+		<li>	 <a href="my.html">o nas</a>	</li>
+		 
+    </ol>
+	
+	
+	</div>
+     
+		
+	<h2 style="text-indent: 1in;" > Wstęp</h2>
+	
+	 
+        <h4 style="text-indent: 1in; ">
+            Celem naszego laboratorium jest zapoznanie się z filtrami COSFIRE służącymi do detekcji naczyń w obrazach siatkówki.
+            </h4>
+        <h4 style="text-indent: 1in; ">
+            Obecnie w medycynie dąży się do zastąpienia badań inwazyjnych nieinwazyjnymi. Nieinwazyjne zabiegi medyczne są bezpieczniejsze dla pacjenta[2] ze względu m.in. 
+            na: zmniejszenie krwawienia,mniejsze ryzyko infekcji, mniej powikłań, krótszą hospitalizacje i niższy koszt badań. 
+            Analiza komputerowa dna oka jest doskonałą alternatywą  oftalmoskopii. 
+            Na podstawie obrazów dna oka możliwe jest diagnozowanie nieprawidłowości związanych z funkcjonowaniem całego organizmu. 
+            Okazuje się, że dzięki analizie obrazów dna oka można wykryć oznaki chorób niezwiązanych ze zmysłem wzroku- chorób sercowo-naczyniowych, 
+            a nawet stwardnienia rozsianego. Dzięki obrazom siatkówki można wykryć choroby, takie jak jaskra, zwyrodnienie plamki żółtej
+            (<a href="http://retina.pl/bazawiedzy/slowniczek/amd-zwyrodnienie-plamki-zoltej/">więcej na temat tej choroby</a> ), nadciśnienie, retinopatia cukrzycowa
+            <a href="http://instytutoka.pl/retinopatia-cukrzycowa-objawy/">(opis choroby)</a> .
+        </h4>
+        <h4 style="text-indent: 1in; ">
+            Automatyczna segmentacja naczyń krwionośnych z obrazu jest jednym z podstawowych kroków, które są wymagane do dalszej analizy obrazów dna siatkówki. 
+            Jest to wymagający proces głównie ze względu na zmienną szerokość naczyń i niską jakość obrazów siatkówki, które zazwyczaj zawierają zaszumienia i zmiany jasności.
+             W procesie obróbki obrazu pomocne są programy komputerowe, które pozwalają w różnych ujęciach analizować dany obraz.
+            My na laboratorium będziemy korzystać ze środowiska Matlab. Stanowi on dobre narzędzie do pracy z obrazami cyfrowymi.
+        </h4>
+        
+
+            <h2 style="text-indent: 1in;" >COSFIRE filters- co to jest i do czego się używa</h2>
+
+            
+                <h4 style="text-indent: 1in;">
+                    Została opracowana  metoda automatycznej segmentacji sieci naczyń w obrazach siatkówki oka. Zaprojektowano filtr, który nazwano B-COSFIRE.
+					(więcej na ten temat można przeczytać <a href="lab2.html">tutaj</a> ).
+                    Został opracowany na podstawie podejścia konfigurowalnego filtru COSFIRE(Combination Of Shifted Filter Responses).  
+                    [5] Konfiguracja obejmuje wybieranie wybranych kanałów banku filtrów Gabora i określenie pewnych parametrów rozmycia i przesunięcia.
+                    Filtry COSFIRE są koncepcyjnie proste i łatwe do wdrożenia. 
+                    Są wszechstronnymi detektorami z góry określonego wzoru i są bardzo skuteczne w praktycznych aplikacjach komputerowych.<br/>
+					
+					 <h2 style="text-indent: 1in;" >COSFIRE metodą klasyfikacji nienadzorowanej <h2 style="text-indent: 1in;" >  i innowacyjność COSFIRE</h2></h2>
+					 <h4 style="text-indent: 1in;">
+					Nowa metoda segmentacji naczyń krwionośnych wykorzystuje model obliczeniowy komórki w korze wzrokowej, bazując na kombinacji pól receptywnych CORF 
+					(Combination of Receptive Fields). Implementację stanowi kombinacja odpowiedzi filtrów, czyli COSFIRE. <br/><br/>
+					
+					Podejście COSFIRE różni się pod kilkoma kwestiami względem innych metod nienadzorowanych. (W przypadku klasyfikacji nienadzorowanej system komputerowy 
+					określa piksele obrazu, które są podobne do siebie we wszystkich kanałach spektralnych, natomiast zadaniem operatora jest dokonanie interpretacji
+					wydzielonych klas poprzez przypisanie im odpowiednich klas użytkowania terenu)[6].<br/>
+					Do niedoskonałości w istniejących  metodach związanych z detekcją sieci naczyń należy niedostateczna selektywność cech w obrazie. Poza tym, są podatne na zmiany
+                   kontrastu oraz obecność szumów.					
+				W metodzie z filtrem COSFIRE tolerowane są zmiany rotacji oraz niewielkie deformacje. W przeciwieństwie do innych metod, 
+				selektywność filtru COSFIRE nie jest określona w implementacji, ale na podstawie pewnego wzorca jest definiowana przez użytkownika. 
+				Dodatkowo, średnia ważona geometryczna, używana w tej metodzie, jest nieliniową funkcją, która daje odpowiedż wtedy, gdy występują wszystkie interesujące punkty 
+				filtru. Dzięki temu ten typ funkcji jest bardziej odporny na szum niż inne metody, w których wykorzystane są sumy ważone.<br/><br/>
+				
+				W proponowanej metodzie, która jest metodą nienadzorowaną, jej wydajność jest porównywalna do metod nadzorowanych. Nadzorowane metody bazują na systemie komputerowym
+				i wymagają wysokiej rozdzielczości pikselowo- wektorowej do wyszukania klasyfikatora, determinującego naczynia.
+				Na przykład w metodzie Fraz et al każdy piksel charakteryzoany przez wektor dziewięcioelementowy, otrzymany przez operacje filtrujące. Wraz ze zwiększającą się liczbą
+				wymiarów wzrasta ilość wykonywanych operacji,a przez to także czas. W podejściu COSFIRE, każdy piksel jest reprezentowany przez 2 wartości, które są sumowane.
+                Jest to skuteczny sposób przetwarzania obrazów siatkówki oka. 
+</h4>
+
+		<h4 style="text-indent: 1in;">			
+					
+				Konfiguracja i zastosowanie B-COSFIRE jest łatwe i proste. Filtry DoG są nieodłącznym elementem tej metody, a filtry Gabora są świetne do konfiguracji filtrów COSFIRE.
+				Filtry te są dobrym narzędziem do wykrywania bifurkacji naczyń, czyli rozwidlenia naczynia na 2 lub więcej. Wydajność filtru B-COSFIRE jest determinowana przez
+				wartości parametrów σ0,σ , α, które są automatycznie wybierane w etapie konfiguracyjnym, co wyróżnia je od innych metod. Co więcej filtr ten charakteryzuje się 
+				bardzo szybkim czasem przetwarzania obrazu-10 sekund, co daje nam kilkukrotną przewagę nad innymi metodami. Ponadto filtry posiadają bardzo wysoką niewrażliwość na
+				obrót, czego zasługą jest przesunięcie rozmytej odpowiedzi GoD, a następnie wyciągnięcie średniej ważonej. 	
+					 </h4>
+            
+
+            <h2 style="text-indent: 1in;" > MRA jako jedna z metod obrazowania naczyń krwionośnych </h2>
+        <h4 style="text-indent: 1in;">
+            Angiografia rezonansu magnetycznego (MRA) [3] jest grupą technik nieinwazyjnych opartych na rezonansie magnetycznym (MRI) bez użycia inwazyjnych cewników 
+            lub promieniowania rentgenowskiego. 
+            Służy do generowania obrazów tętnic (i rzadziej żył), aby ocenić ich zwężenie, okluzje, tętniaki lub inne nieprawidłowości, 
+            często używany jest do oceny tętnic szyi i mózgu, aorty piersiowej i brzucha, tętnic nerkowych i nóg. MRA ma trudności z wykryciem zwężenia małych naczyń krwionośnych, ograniczając jego stosowanie do dużych tętnic[4].
+            MRA stało się bardzo popularną metodą w ciągu kilku lat od jego powstania. Kontrast tkanki wewnętrznej jest niski, 
+            dlatego dla jego wzmocnienia stosuję się różne dożylne środki kontrastowe (często gadolin), a ciało zostaje umieszczone w maszynie do MRI.</br><br>
+           
+            <center>
+                <img src="MRA.jpg" width="200" height="200" />
+            </center>
+<br/>
+
+                    <h4 style="text-indent: 1in;">
+
+
+                       
+
+
+
+                    </h4>
+
+
+                    <h3> Rekonstrukcja i analiza obrazów 2017 </h3>
+
+</div>
+  
+
+
+</body>
+</html>

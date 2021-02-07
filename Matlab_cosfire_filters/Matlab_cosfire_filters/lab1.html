@@ -1,0 +1,154 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pl" >
+<head>
+    <title>laboratorium 1</title>
+    <meta name="description" content="projekt riao" />  
+    <meta name="keywords" content="HTML,CSS,XML"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <meta name="RiAO" content="2017"/>
+    <link rel="Stylesheet" href="sstyle.css" />
+</head>
+<body background= "tlo2.png">
+		
+	<div id="dokument">
+
+	<div id="naglowek">
+                 
+<div style="position:absolute;width:400px;height:200px;"><img src="01_test_mask.gif" width="1100" height="300" /><div style="position:absolute;right:-700px;bottom:-30px;">
+<h1>Trainable COSFIRE filters for vessel delineation with application to retinal images</h1></div></div>
+		 </div> 
+	
+    <div id="kol_prawa">
+	<ol>
+            <li><a href="index.html"  class="active">strona główna </a> </li> 
+		<li>    <a href="#">laboratorium </a>	
+		  <ul>
+		    <li><a href="lab1.html">laboratorium 1</a>	</li>
+		    <li><a href="lab2.html">laboratorium 2</a>	</li>
+				    <li><a href="lab3.html">laboratorium 3</a>	</li>
+					 <li><a href="lab4.html">laboratorium 4 i 5</a>	</li>
+          <li><a href="lab6.html">laboratorium 6</a>	</li>
+		  </ul>
+       </li>				
+	        <li><a href="ref.html">referencje</a> </li>
+		    <li><a href="my.html">o nas</a>	</li> 
+    </ol>
+       
+	</div>
+	
+	 <h4 style="text-indent: 1in;">
+		
+	W czasie pierwszego laboratorium zajęłyśmy się analizowaniem obrazów przy użyciu filtrów Gabora. </br>
+    Filtry Gabora to filtry pasmowe[1], znajdujące zastosowanie w analizie obrazu do wydobywania określonych cech obrazu oraz ich segmentacji. Ekstrakcja 
+	pozwala na zmniejszenie ilości danych,potrzebnych reprezentacji obrazu.
+	Wykorzystywane są  też między innymi do analizy tekstur, a także do wykrywania krawędzi.
+ <br/><br/>
+Stosując pojedynczy filtr Gabora można przefiltrować obraz z dobranym pewnym zakresem częstotliwości. Może być realizowany w dziedzinie częstotliwości, a także w dziedzinie przestrzennej.
+W dziedzinie przestrzennej stanowi sinusoidę o określonej częstotliwości i orientacji, modulowaną funkcją Gaussa.
+Można to wyrazić za pomocą wzoru <br/>
+g(x,y)= s(x,y)*w(x,y) <br/>
+gdzie s(x,y) to zespolona sinusoida, <br/>
+w(x,y) to funkcja Gaussa, nazywana obwiednią
+<br/>
+Natomiast jeśli chodzi o realizację filtru Gabora w dziedzinie częstotliwości, transformacja Fouriera umożliwia przeniesienie funkcji Gabora z dziedziny przestrzennej 
+do dziedziny częstotliwości
+<br/> <br/>
+Filtry Gabora, przy zmieniających się parametrach orientacji i częstotliwości, generują zespół filtrów, nazywany bankiem filtrów. Takie działanie pozwala na przetworzenie obrazów.
+Po przygotowaniu banków filtrów Gabora można dokonać analizy obrazu,składającego się z różnych typów tekstur. W obrazie, będącym odpowiedzią filtru o danych parametrach, można 
+wyróżnić teksturę o specyficznych właściwościach. Po dalszej obróbce, progowaniu, w efekcie można otrzymać wysegmentowany obraz. 
+	
+	
+         </br><br/>
+   W czasie laboratorium użyłyśmy kodów ze<a href="https://www.mathworks.com/matlabcentral/fileexchange/44630-gabor-feature-extraction"> strony </a>, poniższego zdjecia-również z tej strony oraz 2 zdjęć pobranych z google grafika: kolorowej róży oraz "zabawnego" zdjęcia rentgen.
+<br/>
+        <center><img src="zdjecia gabor-na stone/GaborArray.jpg" width="400" height="300" /></center></br>
+        <center><img src="zdjecia gabor-na stone/rozakolor.jpg" width="400" height="300" /></center> </br>
+        <center><img src="zdjecia gabor-na stone/rentgen.jpg"  width="400" height="300"/></center></br>
+
+            Inputs:</br>
+                   u	:	No. of scales (usually set to 5)</br>
+                   v	:	No. of orientations (usually set to 8)</br>
+                   m	:	No. of rows in a 2-D Gabor filter (an odd integer number, usually set to 39)</br>
+                 n	:	No. of columns in a 2-D Gabor filter (an odd integer number, usually set to 39)</br>
+             Output:</br>
+                  gaborArray: A u by v array, element of which are m by n
+                              matries; each matrix being a 2-D Gabor filter</br>
+
+             Sample use:</br>     
+             gaborArray = gaborFilterBank(5,8,39,39);</br>
+        <center><img src="zdjecia gabor-na stone/5,8,39,39-zlaczone.png" width="823" height="392" /></center></br>
+
+    Następnie przefiltrowałyśmy wybrane obrazy za pomocą banku filtrów Gabora, wykorzystując kody z wyżej podanej strony.
+    <br />
+
+    Inputs:<br />
+    img         :	Matrix of the input image        <br />
+    gaborArray	:	Gabor filters bank created by the function gaborFilterBank <br />
+    d1          :	The factor of downsampling along rows.<br />
+    d2          :	The factor of downsampling along columns. <br />
+
+    Output:  <br />
+    featureVector	:   A column vector with length (m*n*u*v)/(d1*d2).
+    This vector is the Gabor feature vector of an
+    m by n image. u is the number of scales and
+    v is the number of orientations in 'gaborArray'.
+
+    <br />
+    Sample use: <br />
+    featureVector = gaborFeatures(img,gaborArray,4,4);
+
+
+
+
+
+
+    <center><img src="gfrentgen.png" width="823" height="392" /></center></br>
+    <center><img src="gfrozakolor.png" width="823" height="392" /></center></br>
+
+
+    <br />
+    Niestety obrazy są właściwie nieczytelne. 
+    Testowaniu poddałyśmy różę oraz zdjęcie rentgenowskie.
+    Podałyśmy domyślne parametry,być może były one za duże dla tych obrazów, przez co jest większa liczba projekcji kosztem widoczności obrazu.
+         Ponadto, obraz "featureVector", przy parametrach d1:4, d2:4 był zupełnie niewidoczny.
+
+    <br />
+    Po zmianie wartości parametrów otrzymałyśmy następujące wyniki:
+    <br />
+        gaborArray = gaborFilterBank(1,1,9,9);</br>
+        featureVector = gaborFeatures(img,gaborArray,30,30);</br>
+         
+
+    <center><img src="1,1,9,9-noga.png" width="823" height="392" /></center></br>
+    <center><img src="1,1,9,9-noga-feature.png" width="281" height="260" /></center></br>
+        gaborArray = gaborFilterBank(1,1,15,15);</br>
+    <center><img src="gfrozakolor2.png" width="823" height="392" /></center></br>
+        gaborArray = gaborFilterBank(1,1,11,11);</br>
+    <center><img src="gfrozakolor3.png" width="823" height="392" /></center></br>
+        featureVector = gaborFeatures(img,gaborArray,20,20);</br>
+        <center><img src="1,1,39,39-featureVector(roza,gaborArray,20,20).png" width="281" height="260" /></center></br>
+        featureVector = gaborFeatures(img,gaborArray,40,40);</br>
+        <center><img src="1,1,39,39-featureVector(roza,gaborArray,40,40).png" width="281" height="260" /></center></br>
+        featureVector = gaborFeatures(img,gaborArray,100,100)</br>
+        <center><img src="1,1,39,39-featureVector(roza,gaborArray,100,100).png" width="281" height="260" /></center></br>
+
+
+    <br />
+	
+    Wyniki są, w porównaniu z poprzednimi, zadowalające.
+    Bez znajomości obrazu wejściowego, można określić, co znajduje się na obrazach po filtrowaniu.
+    Na podstawie otrzymanych obrazów można potwierdzić,że filtry Gabora mogą być stosowane do detekcji krawędzi. Jednak istnieją prostsze metody, dzięki którym może być
+	 spełniona podobna funkcjonalność.
+    Należy jednak dobrać odpowiednie wartości parametrów, by obraz był czytelny. Dzięki stosowaniu powyższych funkcji, można obserwować obraz w różnych orientacjach i skalach.
+
+
+</h4>	
+	
+        
+  
+ <div id="stopka">
+ <br/>
+        <h3> Rekonstrukcja i analiza obrazów 2017 </h3>
+    </div>
+</body>
+</html>

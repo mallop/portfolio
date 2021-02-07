@@ -1,0 +1,101 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pl" >
+<head>
+    <title>laboratorium 6</title>
+    <meta name="description" content="projekt riao" />  
+    <meta name="keywords" content="HTML,CSS,XML"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <meta name="RiAO" content="2017"/>
+    <link rel="Stylesheet" href="sstyle.css" />
+</head>
+<body background= "tlo2.png">
+		
+	<div id="dokument">
+
+	<div id="naglowek">
+                 
+<div style="position:absolute;width:400px;height:200px;"><img src="01_test_mask.gif" width="1100" height="300" /><div style="position:absolute;right:-700px;bottom:-30px;">
+<h1>Trainable COSFIRE filters for vessel delineation with application to retinal images</h1></div></div>
+		 </div> 
+	
+    <div id="kol_prawa">
+	<ol>
+            <li><a href="index.html"  class="active">strona główna </a> </li> 
+		<li>    <a href="#">laboratorium </a>	
+		  <ul>
+		    <li><a href="lab1.html">laboratorium 1</a>	</li>
+		    <li><a href="lab2.html">laboratorium 2</a>	</li>
+			  <li><a href="lab3.html">laboratorium 3</a>	</li>
+			  <li><a href="lab4.html">laboratorium 4 i 5</a>	</li>
+              <li><a href="lab6.html">laboratorium 6</a>	</li>
+		  </ul>
+       </li>				
+	        <li><a href="ref.html">referencje</a> </li>
+		    <li><a href="my.html">o nas</a>	</li> 
+    </ol>
+       
+	</div>
+	
+<br/>
+
+     <h4 style="text-indent: 1in;">
+         Na ostatnim laboratorium zajęłyśmy się punktem c-"Run and test reference methods for vessel extractions: (a) matched filters,(b) first-order derivative of the Gaussian
+         (c) Matched Filter with First-Order Derivative of Gaussian function".
+<br/><br/>
+<u>Filtry dopasowane są filtrami:</u><br/>
+- liniowymi- system liniowy spełnia zasadę superpozycji (odpowiedź systemu na sumę sygnałów wejściowych jest równa sumie odpowiedzi systemu
+na poszczególne sygnały składowe). <br/>
+- stacjonarnymi- system jest stacjonarny, gdy jego właściwości nie są zależne od czasu<br/>
+- przyczynowymi- system jest przyczynowy, jeśli jego sygnał wyjściowy w danej chwili zależny jest od sygnału wejściowego w tej chwili i/lub sygnału wejściowego
+z chwil przeszłych.[2] <br/>
+Filtr, dzięki któremu można uzyskać maksymalną możliwą wartość stosunku sygnału do szumu dla sygnału zakłóconego białym szumem gaussowskim 
+ nazywa się filtrem dopasowanym do sygnału użytecznego (deterministycznego- s[n])<br/>
+ Odpowiedź impulsowa takiego filtru spełnia warunek: &nbsp; h[n] = s*[P − n]&nbsp;&nbsp;&nbsp;&nbsp;   n-czas trwania sygnału,&nbsp; n= 0,1,2...P, 
+ &nbsp;&nbsp;*-operator sprzężenia<br/> 
+ czyli inaczej:  odpowiedź impulsowa to sygnał wzorcowy opóźniony o P.[1]<br/><br/>
+ 
+ <u>Filtracja z wykorzystaniem pierwszej pochodnej funkcji Gaussa</u><br/>
+ Funkcja Gaussa jest wykorzystywana na różny sposób: definiuje rozkład prawdopodobieństwa dla szumu, stanowi operator wygładzania, wykorzystywana jest w 
+matematyce. 
+ <br/>
+Filtr Gaussa jest filtrem "wygładzającym" do wykrywania krawędzi. W przetwarzaniu obrazów wykorzystywana jest dyskretna wersja funkcji Gaussa jako odpowiedź
+impulsowa filtru. Jeśli dyskretny obraz jest tworzony przez próbki obrazu ciągłego, następuje zjawisko interpolacji. Interpolacja może być wyrażona jako
+splot. Splata się filtr Gaussa z obrazem. Dla wyższych pochodnych funkcji Gaussa kernele (jądro splotu) są coraz bardziej podobne.
+ Do obliczenia podobieństwa wykorzystuje się korelację.
+<br/>
+Filtrowanie Gaussowskie służy do usuwania szumów i szczegółów z obrazu.
+Filtr Gaussa można traktować jako filtr dolnoprzepustowy. Centralne piksele obrazu mają większą wagę niż te na obrzeżach.
+ Stosowanie filtru Gaussa może oznaczać niezachowanie jasności obrazu.[3]
+
+
+
+		<br/><br/> Kod do wykonania zadania pobrałyśmy ze <a href="http://www4.comp.polyu.edu.hk/~cslzhang/papers.htm">
+             strony<a />.
+             Wcześniej jednak pobrałyśmy <a href="http://www.ia.uned.es/~ejcarmona/DRIONS-DB.html">
+                 bazę <a />obrazów siatkówki, której również używali autorzy kodu, z którego korzystałyśmy w trakcie laboratorium.
+                 <br />
+                 <br />
+         Przykładowe zdjęcia, które znalazałyśmy w bazie:
+                 <center><img src="01_manual1.gif" width="300" height="300" /></center><br/>
+                 
+                 <center><img src="01_test.png" width="300" height="300" alt="" /></center><br />
+                 
+                 <center><img src="01_test_mask.gif" width="300" height="300" /></center><br/>
+
+         Następnie próbowałyśmy uruchomić funkcję "main". Zakomentowałyśmy linie: 54,62,70 oraz odkomentowłyśmy linie 55,63,71-ustawiając jednocześnie odpowiednie ścieżki, 
+         jednak zaczeły wyskakiwać nam błędy, których nie udało nam się usunąć i w rezultacie nie udało nam się wykonać zadania. 
+
+        <center><img src="matlab-main.png" width="1064" height="410" /></center><br />
+        <center><img src="matlab-main2.png" width="380" height="134" /></center><br />
+
+
+     </h4>	
+	
+        
+  
+ <div id="stopka">
+ <br/>
+        <h3> Rekonstrukcja i analiza obrazów 2017 </h3>
+    </div>
+</body>
+</html>

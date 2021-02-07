@@ -1,0 +1,175 @@
+﻿body
+{
+ 	
+}
+
+h1
+{
+    font-family:Buxton Sketch;
+    text-align:center;
+    color: grey;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+h2 
+{
+    font-family:Comic Sans Ms;
+    font-weight:bold;
+    font-style:normal;
+    color:black;
+    font-size:32px;
+    //text-transform:capitalize;
+    text-align:justify;
+}
+
+
+h4
+{
+font-size:18px;
+font-family:Times New Roman;
+text-align:justify;
+color:black;
+ line-height: 2em;
+}
+
+p
+{
+    //text-align:center;
+	font-size:16px;
+	color:black;
+       font-style: Times New Roman;
+       text-align:justify;
+}
+
+
+ol {
+  list-style-type:none;
+  padding:0;
+  margin-top:10px;
+  font-size:25px;
+  height:2em;
+  line-height:2em;
+  text-align:center;
+font-family:Buxton Sketch;
+}
+
+ol > li {
+float:left;
+background-color:#deb8b8;
+width:273px;  
+margin-left:2px;
+color:white;
+height:2em;
+}
+
+ol a {
+  display:block;
+  color:black;
+  text-decoration:none;
+  padding:0 5px;
+}
+
+ol > li > a:hover {
+  color:grey;
+}
+
+ol > li:hover {
+  background-color:#FAFAE7;
+}
+
+ol > li > ul {
+  list-style-type:none;
+  padding:0;
+  margin:0;
+}
+
+
+ol > li:first-child {
+  margin-left:0;
+
+}
+
+ol > li > ul > li > a {
+  border-top:2px solid white;
+}
+
+
+ol > li > ul > li:hover a {
+color:green;
+}
+
+ol > li > ul {
+  display:none;
+}
+
+ol > li:hover > ul {
+  display:block;
+background-color:white;
+}
+
+
+#dokument 
+{
+    width: 1100px;
+    height:1230px;
+    margin:10px auto;
+    border: 3px solid white;
+background-image:url('tlo2.png') ;
+    
+}
+
+#dokument1 
+{
+    width: 1100px;
+    height:1000px;
+    margin:10px auto;
+    border: 3px solid white;
+    background-image:url('tlo2.png') ;
+    
+}
+
+#naglowek 
+{
+    width:1100px;
+    height:300px;
+  background-color:#B0C4DE;
+    position:relative;
+}
+
+
+#kol_prawa ul a:hover, #kol_prawa ul .active{
+	color: #C0D9D9;
+background-color:#FAFAE7;
+}
+
+
+#kol_prawa ul  a
+{
+	font-size: 27px;
+    font-style:Comic Sans Ms;  
+    color: black;
+    text-decoration: none;
+	text-shadow: #000	 
+}
+
+#kol_prawa
+{
+    position: relative;
+    
+    width:1100;
+    height:100px;
+    
+    background-image:url('tlo2.png');    
+}
+
+
+#stopka
+{
+	width:auto;
+	height:auto;
+	margin: 5px;
+        text-align: center;       
+}
+
+

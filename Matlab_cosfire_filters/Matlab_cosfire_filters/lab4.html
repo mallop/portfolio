@@ -1,0 +1,98 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pl" >
+<head>
+    <title>laboratorium 4 i 5</title>
+    <meta name="description" content="projekt riao" />  
+    <meta name="keywords" content="HTML,CSS,XML"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <meta name="RiAO" content="2017"/>
+    <link rel="Stylesheet" href="sstyle.css" />
+</head>
+<body background= "tlo2.png">
+		
+	<div id="dokument">
+
+	<div id="naglowek">
+                 
+<div style="position:absolute;width:400px;height:200px;"><img src="01_test_mask.gif" width="1100" height="300" /><div style="position:absolute;right:-700px;bottom:-30px;">
+<h1>Trainable COSFIRE filters for vessel delineation with application to retinal images</h1></div></div>
+		 </div> 
+	
+    <div id="kol_prawa">
+	<ol>
+            <li><a href="index.html"  class="active">strona główna </a> </li> 
+		<li>    <a href="#">laboratorium </a>	
+		  <ul>
+		    <li><a href="lab1.html">laboratorium 1</a>	</li>
+		    <li><a href="lab2.html">laboratorium 2</a>	</li>
+			  <li><a href="lab3.html">laboratorium 3</a>	</li>
+			  <li><a href="lab4.html">laboratorium 4 i 5</a>	</li>
+          <li><a href="lab6.html">laboratorium 6</a>	</li>
+		  </ul>
+       </li>				
+	        <li><a href="ref.html">referencje</a> </li>
+		    <li><a href="my.html">o nas</a>	</li> 
+    </ol>
+       
+	</div>
+	
+	 <h4 style="text-indent: 1in;">
+		
+	
+ <h4 style="text-indent: 1in;">
+Na kolejnych zajęciach kontynuowałyśmy zadanie opisane w laboratorium 3 (funkcja, która została przez nas napisana do wykrywania krawędzi nie do końca działała tak, jakbyśmy chciały, 
+dlatego skorzystałyśmy z pomocy w postaci innej funkcji), dlatego umieściłyśmy tam wszystko, co dotyczyło konkretnie tamtego zagadnienia.<br/>
+
+ Następnie zajęłyśmy się tematem "Frangi filtering".<br/><br/>
+ 
+ Naczynia krwionośne zajmują niewielki obszar analizowanego obrazu i są jaśniejsze od tło lub ciemniejsze. To pozwoliło stworzyć funkcję, która by wykorzystywała różnicę w 
+ intensywności obrazu pomiędzy naczyniami krwionośnymi a otaczającą je tkanką . Wartości związane z intensywnością obrazu mogą być uznane za funcję dyskretną.<br/>
+  W metodzie z Frangi filter, oblicza się Hesjan dla każdego piksela (Hesjan-macierz pochodnych cząstkowych drugiego rzędu). Dlatego może być, podobnie jak obraz, uznany za funkcję 
+  dyskretną[1]. Właściwości tej macierzy, takie jak wartości własne i wektory własne określają kierunek naczynia krwionośnego. Na podstawie pomiarów klasyfikuje się dane 
+ piksele jako naczynia krwionośne jako otaczające je tkanki.[2] Proces ten związany jest z metodą filtracji Frangi.  Dzięki stosowaniu filtrów Frangi można określić, jak wydłużowy jest
+ obszar obrazu, czyli wykrywane są naczynia, które są długie.
+ 
+<br/><br/>
+
+
+ 
+ Kod pobrałyśmy ze <a href="http://www.mathworks.com/matlabcentral/fileexchange/24409-hessian-based-frangi-vesselness-filter?focused=5148980&tab=function">strony<a/>.
+ Próbwałyśmy uruchomić podany program, jednak wystąpiły pewne błędy przy kompilacji. Okazało się, że nie zauważyłyśmy, że próbujemy uruchomić funkcję, znajdującą się wewnątrz innej
+ funkcji :-) .<br/>
+Funkcja wykorzystuje wektory Hessian do obliczania podobieństwa obszaru na obrazie do naczyń lub innych elementów. Wartości wejściowe funkcji :<br/>
+obraz wejściowy<br/>
+FrangeScaleRange, który określa zakres parametru sigma-domyślnie [1 8]<br/>
+FrangeScaleRatio, który określa wartość między kolejnymi parametrami sigma-domyślnie 2<br/>
+FrangiBetaOne-stała korekcji Frangi-domyślnie 0,5<br/>
+FrangiBetaTwo-stała korekcji Frangi-domyślnie 15<br/>
+BlackWhite-Wykrywanie czarnych grzebietów- domyślnie ustawione na true, natomiast białych na false<br/>
+verbose, które informuje o debugowaniu-domyślnie true<br/>
+
+Wartością wyjściową jest obraz ze wzmocnionymi naczyniami, skala, która określa maksymalną intensywność każdego znalezionego piksela oraz matryca określa kierunki pikseli.
+<br/>
+Pierwszym krokiem funkcji jest określenie wyżej wymienionych parametrów oraz sprawdzenie czy wszystkie zostały podane. Następnie tworzone są nowe macierze, które będą służyć do 
+zapisywania nowo powstałych obrazów. Kolejno dla wszystkich parametrów sigma przeprowadzona jest filtracja Frangi: tworzona jest macierz 2D Hassian, przeprowadzana jest korekcja
+ dla powstałeś skali, obliczane są wektory i wartości własne, następnie obliczane są prawdopodobieństwa i obraz wyjściowy. <br/><br/>
+ Po naprawieniu błędu i dokonaniu drobnych zmian w nowym skrypcie, udało nam się w końcu wyświetlić obrazy po filtracji. Otrzymałyśmy następujące obrazy:<br/><br/>
+ <center><img src="frangi1.PNG" width="600" height="300" /></center></br>
+Takich rezultatów się nie spodziewałyśmy. Jednak po zmianie parametrów otrzymałyśmy o wiele lepsze wyniki.<br/><br/>
+  <center><img src="frangi2.PNG" width="600" height="300" /></center><br/><br/>
+  Przy zmianie parametru 'FrangiScaleRange' (określający zakres sigm, ilość użytych sigm) na wartość [1 20] wynik działania funkcji był następujący:
+    <center><img src="frangi3.PNG" width="600" height="300" /></center></br><br/>
+ 
+ Na obrazach uwidocznione są jasne struktury na ciemnym tle. Można zauważyć, że obszar przedstawiający tkankę został wytłumiony, a naczynia w siatkówce zostały rozjaśnione.
+
+
+ Filtr Frangi używa się do lepszego rozróżniania krawędzi, do wzmocnienia widoczności naczyń.
+ 
+ 
+</h4>	
+	
+        
+  
+ <div id="stopka">
+ <br/>
+        <h3> Rekonstrukcja i analiza obrazów 2017 </h3>
+    </div>
+</body>
+</html>

@@ -1,0 +1,107 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pl" >
+<head>
+    <title>laboratorium 3</title>
+    <meta name="description" content="projekt riao" />  
+    <meta name="keywords" content="HTML,CSS,XML"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <meta name="RiAO" content="2017"/>
+    <link rel="Stylesheet" href="sstyle.css" />
+</head>
+<body background= "tlo2.png">
+		
+	<div id="dokument">
+
+	<div id="naglowek">
+                 
+<div style="position:absolute;width:400px;height:200px;"><img src="01_test_mask.gif" width="1100" height="300" /><div style="position:absolute;right:-700px;bottom:-30px;">
+<h1>Trainable COSFIRE filters for vessel delineation with application to retinal images</h1></div></div>
+		 </div> 
+	
+    <div id="kol_prawa">
+	<ol>
+            <li><a href="index.html"  class="active">strona główna </a> </li> 
+		<li>    <a href="#">laboratorium </a>	
+		  <ul>
+		    <li><a href="lab1.html">laboratorium 1</a>	</li>
+		    <li><a href="lab2.html">laboratorium 2</a>	</li>
+			  <li><a href="lab3.html">laboratorium 3</a>	</li>
+			   <li><a href="lab4.html">laboratorium 4 i 5</a>	</li>
+          <li><a href="lab6.html">laboratorium 6</a>	</li>
+		  </ul>
+       </li>				
+	        <li><a href="ref.html">referencje</a> </li>
+		    <li><a href="my.html">o nas</a>	</li> 
+    </ol>
+       
+	</div>
+	
+	 <h4 style="text-indent: 1in;">
+		
+	Na trzecich zajęciach laboratoryjnych miałyśmy w planach realizować kolejny punkt z instrukcji:
+	<br>
+	"Run and test reference methods for vessel extractions:matched filters,first-order derivative of the Gaussian, Matched Filter with First-
+Order Derivative of Gaussian function, Frangi filtering. "<br/>
+
+Jedanak na początek dostałyśmy za zadanie przetestowanie działania funkcji, która wykrywa krawędzie pionowe i poziome. Przy okazji powtórzyłyśmy definicje pochodnej i gradientu.
+<br>
+POCHODNA- tempo zmian wartości funkcji względem zmian jej argumentów. Geometrycznie, pochodna określa tangens kąta nachylenia wykresu funkcji w danym punkcie.<br/>
+
+GRADIENT- wektor, który określa wartość i kierunek najszybszego wzrostu wielkości skalarnej. 
+<br/><br/>
+Można powiedzieć, że gradient stanowi odpowiednik pochodnych dla funkcji wielu zmiennych.
+
+ Gdy funkcja 
+ <br/>f(x1, x2,...,xn)<br>
+ jest różniczkowalną funkcją wielu zmiennych, gradient stanowi wektor n pochodnych cząstkowych funkcji.[1]
+ Wektor określa kierunek największego wzrostu funkcji w danym punkcie,a długość wektora opisuje wielkość tego wzrostu. 
+
+<br><br>
+Do wykrywania krawędzi obrazu można zastosować pierwszą pochodną funkcji opisującej zmiany stopni szarości obrazu. Jako przybliżenie pochodnej dla obrazu komputerowego można 
+wykorzystać gradient.[2]
+
+ 
+ <br/>
+ </h4>
+ <h4 style="text-indent: 1in;">
+Następnie zajęłyśmy się sprawdzaniem działania funkcji do detekcji krawędzi pionowych i poziomych ( przejście od obszaru ciemnego do jasnego lub na odwrót) .<br/>
+Fragment kodu :<br/>
+for i = 1:(size(picture,1)-2)<br/>
+    for j = 1:(size(picture,2)<br/>
+     moved_picture(i,j) = picture(i+2,j);<br/>       
+    end<br/>
+end<br/>
+
+for i = 1:(size(picture,1))<br/>
+    for j = 1:(size(picture,2)-2)<br/>
+        moved_picture1(i,j) = picture(i,j+2);<br/>       
+    end<br/>
+end<br/>
+<br/>
+
+
+ Zostało tu wykorzystana pętla 'for', związana z analizą wierszy i kolumn punktów obrazu. <br/>
+Aby pokazać na obrazie określone krawędzie, należy wykonać odejmowanie od przesuniętego obrazu.<br/>
+edge_picture1 = moved_picture - picture;   <br/>         
+edge_picture2 = moved_picture1 - picture; <br/><br/>
+Rezultatem działania funkcji są następujące obrazy <br/>
+<center><img src="pionpoziom.PNG" width="300" height="300" /></center></br>
+<center><img src="poziompion.PNG" width="300" height="300" /></center></br>
+
+dla obrazu oryginalnego<br/>
+ 
+
+ <center><img src="okoszare.PNG" width="300" height="300" /></center></br>
+ <br/><br/>
+ Na podstawie dogłębnej analizy powyższych obrazów można stwierdzić, że zostało wykonane zadanie wykrycia krawędzi pionowych, jak i poziomych. Nie są to oszałamiające wyniki.
+ Prawdopodobnie zmniejszenie ilości szumów mogłoby dać bardziej zadowalające wyniki.
+</h4>	
+	
+        
+  
+ <div id="stopka">
+ <br/>
+        <h3> Rekonstrukcja i analiza obrazów 2017 </h3>
+    </div>
+</body>
+</html>
