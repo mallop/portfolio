@@ -1,6 +1,25 @@
 # portfolio
+# About me
+I am Biomedical engineer, with specialization in Informatics in medicine. I'm interested in software testing, business analysis. On this site I want to share my experience in IT since college.
+
+# Tools
+<ul>
+   <li> Testlink </li>
+    <li> Jira </li>
+   <li> Enterprise Architect> </li>
+   <li> Microsoft Office 365 </li>
+  </ul>
+
+# Skills
+<ul>
+   <li> English B2 </li>
+   <li> SQL </li>
+   <li> UML </li>
+   <li> creating test cases </li>
+   <li> reporting bugs </li>
+
 # Projects
-<ol>
+<ul>
    <li> <a href= "https://github.com/mallop/portfolio/tree/mallop-project1/Matlab_cosfire_filters/Matlab_cosfire_filters"> Trainable COSFIRE filters for vessel delineation with application to retinal images (Matlab, html) </a> </li>
    <li> <a href= "https://github.com/mallop/portfolio/tree/mallop-project1/Java_game/GameJava"> Game in Java </a> </li> 
- </ol>
+ </ul>
