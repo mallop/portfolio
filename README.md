@@ -6,7 +6,7 @@ I am Biomedical engineer, with specialization in Informatics in medicine. I'm in
 <ul>
    <li> Testlink </li>
     <li> Jira </li>
-   <li> Enterprise Architect> </li>
+   <li> Enterprise Architect </li>
    <li> Microsoft Office 365 </li>
   </ul>
 
@@ -17,6 +17,15 @@ I am Biomedical engineer, with specialization in Informatics in medicine. I'm in
    <li> UML </li>
    <li> creating test cases </li>
    <li> reporting bugs </li>
+</ul>
+
+# Courses, lectures, webinars
+<ul>
+   <li> Zostań testerem </li>
+   <li> CodeSkill </li>
+   <li> HRowa środa w testerskim świecie </li>
+</ul>
+
 
 # Projects
 <ul>
