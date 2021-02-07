@@ -1,0 +1,5 @@
+The aim of the project is to create a game that allows education in the field of sequences and at the same time improves work of the brain. In addition, the game allows you to practice short-term memory, trains visual-motor coordination and trains the ability to quickly process images on the signals brought to the brain.
+
+The game has to teach and expand knowledge about the rules of constructing a sequence, using the ability to efficiently perform mathematical operations. It is especially recommended for older people to maintain mental fitness.
+
+You need a mouse to operate the game. After pressing the start button, an array of numbers appears on the screen and the sequence structure principle (e.g. ascending ordering, selecting even numbers, selecting multiples of numbers). The game is divided into difficulty levels. Each level ends by selecting the correct numbers in a given order. What matters in the game is the correctness of the task completion and time, in which it was completed.
