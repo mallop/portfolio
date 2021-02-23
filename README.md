@@ -33,5 +33,5 @@ I am Biomedical engineer, with specialization in Informatics in medicine. I'm es
    <li> <a href= "https://github.com/mallop/portfolio/tree/mallop-project1/Java_game/GameJava"> Game in Java </a> </li>
    <li> <a href= "https://github.com/mallop/portfolio/tree/mallop-project1/c%2B%2B_game"> Game in c++ </a> </li>
    <li> <a href= "https://github.com/mallop/portfolio/tree/mallop-project1/Matlab_feature_extraction/Matlab_feature_extraction">Feature extraction based on the fingerprints </a> </li>
-   <li> <a href= "https://github.com/mallop/portfolio/blob/mallop-project1/tc.pdf"> Test cases (MrBuggy2)</a> </li>
+   <li> <a href= "https://github.com/mallop/portfolio/blob/mallop-project1/test_cases1.xlsx"> Test cases (MrBuggy2)</a> </li>
  </ul>
