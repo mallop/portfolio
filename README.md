@@ -17,13 +17,14 @@ I am Biomedical engineer, with specialization in Informatics in medicine. I'm es
    <li> UML </li>
    <li> creating test cases </li>
    <li> reporting bugs </li>
+   <li> Java </li>
 </ul>
 
 # Courses, lectures, webinars
 <ul>
    <li> Zostań testerem </li>
    <li> CodeSkill </li>
-   <li> HRowa środa w testerskim świecie </li>
+   <li> Introduction to Data Analysis using Excel </li>
 </ul>
 
 
