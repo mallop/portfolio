@@ -32,9 +32,8 @@ I am Biomedical engineer, with specialization in Informatics in medicine. I'm es
 <ul>
    <li> <a href= "https://github.com/mallop/portfolio/tree/mallop-project1/Java_game/GameJava"> Game in Java </a> </li>
    <li> <a href= "https://github.com/mallop/portfolio/tree/mallop-project1/c%2B%2B_game"> Game in c++ </a> </li>
-    <li> <a href= "https://github.com/mallop/portfolio/blob/mallop-project1/test_cases1.xlsx"> Test cases (MrBuggy2)</a> </li>
+    <li> <a href= "https://drive.google.com/file/d/1E-_3FLRhfSbGkS0DSqDQFVh0lGu5IhHQ/view?usp=sharing"> Test cases (MrBuggy2)</a> </li>
    <li> <a href= "https://github.com/mallop/portfolio/tree/mallop-project1/Matlab_feature_extraction/Matlab_feature_extraction">Feature extraction based on the fingerprints </a> </li>
     <li> <a href= "https://github.com/mallop/portfolio/tree/mallop-project1/Matlab_cosfire_filters/Matlab_cosfire_filters"> Trainable COSFIRE filters for vessel delineation with application to retinal images (Matlab, html) </a> </li>
-   <li> <a href= "https://drive.google.com/drive/folders/1xgJM1eRIOKImMCfKgXdzvMqR5mPAchGq?usp=sharing">test cases</li>
  </ul>
  
