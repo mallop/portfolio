@@ -4,10 +4,10 @@ I am Biomedical engineer, with specialization in Informatics in medicine. I'm es
 
 # Tools
 
-    ⋅⋅* Testlink 
-    ⋅⋅* Jira
-    ⋅⋅* Enterprise Architect
-    ⋅⋅* Microsoft Office 365 
+* Testlink
+* Jira
+* Enterprise Architect
+* Microsoft Office 365 
   
 
 # Skills
