@@ -28,7 +28,7 @@ I am Biomedical engineer, with specialization in Informatics in medicine. I'm es
 
 
 # Projects
-* [Game in Java]("https://github.com/mallop/portfolio/tree/mallop-project1/Java_game/GameJava")
+* [Game in Java](https://github.com/mallop/portfolio/tree/mallop-project1/Java_game/GameJava)
    
    <ul>
    <li> <a href= "https://github.com/mallop/portfolio/tree/mallop-project1/c%2B%2B_game"> Game in c++ </a> </li>
