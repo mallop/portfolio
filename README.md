@@ -3,12 +3,12 @@
 I am Biomedical engineer, with specialization in Informatics in medicine. I'm especially interested in software testing, business analysis. On this site I want to share my experience in IT since college.
 
 # Tools
-<ul>
-   <li> Testlink </li>
-    <li> Jira </li>
-   <li> Enterprise Architect </li>
-   <li> Microsoft Office 365 </li>
-  </ul>
+
+    - Testlink 
+    - Jira
+    - Enterprise Architect
+    - Microsoft Office 365 
+  
 
 # Skills
 <ul>
