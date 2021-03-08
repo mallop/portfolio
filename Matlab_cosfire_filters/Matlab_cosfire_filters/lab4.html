@@ -21,17 +21,17 @@
     <div id="kol_prawa">
 	<ol>
             <li><a href="index.html"  class="active">strona główna </a> </li> 
-		<li>    <a href="#">laboratorium </a>	
+			<li><a href="#">laboratorium </a>	
 		  <ul>
 		    <li><a href="lab1.html">laboratorium 1</a>	</li>
 		    <li><a href="lab2.html">laboratorium 2</a>	</li>
-			  <li><a href="lab3.html">laboratorium 3</a>	</li>
-			  <li><a href="lab4.html">laboratorium 4 i 5</a>	</li>
-          <li><a href="lab6.html">laboratorium 6</a>	</li>
+			<li><a href="lab3.html">laboratorium 3</a>	</li>
+			<li><a href="lab4.html">laboratorium 4 i 5</a>	</li>
+            <li><a href="lab6.html">laboratorium 6</a>	</li>
 		  </ul>
        </li>				
 	        <li><a href="ref.html">referencje</a> </li>
-		    <li><a href="my.html">o nas</a>	</li> 
+		    <li><a href="http://www.cs.rug.nl/~george/articles/MEDIA2015.pdf">artykuł</a> </li>
     </ol>
        
 	</div>
@@ -53,8 +53,6 @@ dlatego skorzystałyśmy z pomocy w postaci innej funkcji), dlatego umieściły�
  obszar obrazu, czyli wykrywane są naczynia, które są długie.
  
 <br/><br/>
-
-
  
  Kod pobrałyśmy ze <a href="http://www.mathworks.com/matlabcentral/fileexchange/24409-hessian-based-frangi-vesselness-filter?focused=5148980&tab=function">strony<a/>.
  Próbwałyśmy uruchomić podany program, jednak wystąpiły pewne błędy przy kompilacji. Okazało się, że nie zauważyłyśmy, że próbujemy uruchomić funkcję, znajdującą się wewnątrz innej
@@ -74,25 +72,22 @@ Pierwszym krokiem funkcji jest określenie wyżej wymienionych parametrów oraz 
 zapisywania nowo powstałych obrazów. Kolejno dla wszystkich parametrów sigma przeprowadzona jest filtracja Frangi: tworzona jest macierz 2D Hassian, przeprowadzana jest korekcja
  dla powstałeś skali, obliczane są wektory i wartości własne, następnie obliczane są prawdopodobieństwa i obraz wyjściowy. <br/><br/>
  Po naprawieniu błędu i dokonaniu drobnych zmian w nowym skrypcie, udało nam się w końcu wyświetlić obrazy po filtracji. Otrzymałyśmy następujące obrazy:<br/><br/>
- <center><img src="frangi1.PNG" width="600" height="300" /></center></br>
+ <center><img src="zdjecia_frangi/frangi1.PNG" width="600" height="300" /></center></br>
 Takich rezultatów się nie spodziewałyśmy. Jednak po zmianie parametrów otrzymałyśmy o wiele lepsze wyniki.<br/><br/>
-  <center><img src="frangi2.PNG" width="600" height="300" /></center><br/><br/>
+  <center><img src="zdjecia_frangi/frangi2.PNG" width="600" height="300" /></center><br/><br/>
   Przy zmianie parametru 'FrangiScaleRange' (określający zakres sigm, ilość użytych sigm) na wartość [1 20] wynik działania funkcji był następujący:
-    <center><img src="frangi3.PNG" width="600" height="300" /></center></br><br/>
+    <center><img src="zdjecia_frangi/frangi3.PNG" width="600" height="300" /></center></br><br/>
  
  Na obrazach uwidocznione są jasne struktury na ciemnym tle. Można zauważyć, że obszar przedstawiający tkankę został wytłumiony, a naczynia w siatkówce zostały rozjaśnione.
 
 
  Filtr Frangi używa się do lepszego rozróżniania krawędzi, do wzmocnienia widoczności naczyń.
  
- 
 </h4>	
-	
-        
-  
+	      
  <div id="stopka">
  <br/>
-        <h3> Rekonstrukcja i analiza obrazów 2017 </h3>
+        <h3> Rekonstrukcja i analiza obrazów</h3>
     </div>
 </body>
 </html>

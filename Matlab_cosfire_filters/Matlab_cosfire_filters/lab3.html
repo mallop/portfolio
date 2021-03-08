@@ -14,7 +14,7 @@
 
 	<div id="naglowek">
                  
-<div style="position:absolute;width:400px;height:200px;"><img src="01_test_mask.gif" width="1100" height="300" /><div style="position:absolute;right:-700px;bottom:-30px;">
+	<div style="position:absolute;width:400px;height:200px;"><img src="01_test_mask.gif" width="1100" height="300" /><div style="position:absolute;right:-700px;bottom:-30px;">
 <h1>Trainable COSFIRE filters for vessel delineation with application to retinal images</h1></div></div>
 		 </div> 
 	
@@ -25,13 +25,13 @@
 		  <ul>
 		    <li><a href="lab1.html">laboratorium 1</a>	</li>
 		    <li><a href="lab2.html">laboratorium 2</a>	</li>
-			  <li><a href="lab3.html">laboratorium 3</a>	</li>
-			   <li><a href="lab4.html">laboratorium 4 i 5</a>	</li>
-          <li><a href="lab6.html">laboratorium 6</a>	</li>
+			<li><a href="lab3.html">laboratorium 3</a>	</li>
+			<li><a href="lab4.html">laboratorium 4 i 5</a>	</li>
+			<li><a href="lab6.html">laboratorium 6</a>	</li>
 		  </ul>
        </li>				
 	        <li><a href="ref.html">referencje</a> </li>
-		    <li><a href="my.html">o nas</a>	</li> 
+		    <li><a href="http://www.cs.rug.nl/~george/articles/MEDIA2015.pdf">artykuł</a> </li> 
     </ol>
        
 	</div>
@@ -60,7 +60,6 @@ Można powiedzieć, że gradient stanowi odpowiednik pochodnych dla funkcji wiel
 Do wykrywania krawędzi obrazu można zastosować pierwszą pochodną funkcji opisującej zmiany stopni szarości obrazu. Jako przybliżenie pochodnej dla obrazu komputerowego można 
 wykorzystać gradient.[2]
 
- 
  <br/>
  </h4>
  <h4 style="text-indent: 1in;">
@@ -79,29 +78,26 @@ for i = 1:(size(picture,1))<br/>
 end<br/>
 <br/>
 
-
  Zostało tu wykorzystana pętla 'for', związana z analizą wierszy i kolumn punktów obrazu. <br/>
 Aby pokazać na obrazie określone krawędzie, należy wykonać odejmowanie od przesuniętego obrazu.<br/>
 edge_picture1 = moved_picture - picture;   <br/>         
 edge_picture2 = moved_picture1 - picture; <br/><br/>
 Rezultatem działania funkcji są następujące obrazy <br/>
-<center><img src="pionpoziom.PNG" width="300" height="300" /></center></br>
-<center><img src="poziompion.PNG" width="300" height="300" /></center></br>
+<center><img src="zdjecia/pionpoziom.PNG" width="300" height="300" /></center></br>
+<center><img src="zdjecia/poziompion.PNG" width="300" height="300" /></center></br>
 
 dla obrazu oryginalnego<br/>
  
 
- <center><img src="okoszare.PNG" width="300" height="300" /></center></br>
+ <center><img src="zdjecia/okoszare.PNG" width="300" height="300" /></center></br>
  <br/><br/>
  Na podstawie dogłębnej analizy powyższych obrazów można stwierdzić, że zostało wykonane zadanie wykrycia krawędzi pionowych, jak i poziomych. Nie są to oszałamiające wyniki.
  Prawdopodobnie zmniejszenie ilości szumów mogłoby dać bardziej zadowalające wyniki.
 </h4>	
-	
-        
-  
+	      
  <div id="stopka">
  <br/>
-        <h3> Rekonstrukcja i analiza obrazów 2017 </h3>
+        <h3> Rekonstrukcja i analiza obrazów</h3>
     </div>
 </body>
 </html>

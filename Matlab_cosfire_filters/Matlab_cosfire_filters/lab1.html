@@ -31,7 +31,7 @@
 		  </ul>
        </li>				
 	        <li><a href="ref.html">referencje</a> </li>
-		    <li><a href="my.html">o nas</a>	</li> 
+		    <li><a href="http://www.cs.rug.nl/~george/articles/MEDIA2015.pdf">artykuł</a> </li>
     </ol>
        
 	</div>
@@ -61,9 +61,9 @@ wyróżnić teksturę o specyficznych właściwościach. Po dalszej obróbce, pr
          </br><br/>
    W czasie laboratorium użyłyśmy kodów ze<a href="https://www.mathworks.com/matlabcentral/fileexchange/44630-gabor-feature-extraction"> strony </a>, poniższego zdjecia-również z tej strony oraz 2 zdjęć pobranych z google grafika: kolorowej róży oraz "zabawnego" zdjęcia rentgen.
 <br/>
-        <center><img src="zdjecia gabor-na stone/GaborArray.jpg" width="400" height="300" /></center></br>
-        <center><img src="zdjecia gabor-na stone/rozakolor.jpg" width="400" height="300" /></center> </br>
-        <center><img src="zdjecia gabor-na stone/rentgen.jpg"  width="400" height="300"/></center></br>
+        <center><img src="zdjecia_gabor/GaborArray.jpg" width="400" height="300" /></center></br>
+        <center><img src="zdjecia_gabor/rozakolor.jpg" width="400" height="300" /></center> </br>
+        <center><img src="zdjecia_gabor/rentgen.jpg"  width="400" height="300"/></center></br>
 
             Inputs:</br>
                    u	:	No. of scales (usually set to 5)</br>
@@ -76,7 +76,7 @@ wyróżnić teksturę o specyficznych właściwościach. Po dalszej obróbce, pr
 
              Sample use:</br>     
              gaborArray = gaborFilterBank(5,8,39,39);</br>
-        <center><img src="zdjecia gabor-na stone/5,8,39,39-zlaczone.png" width="823" height="392" /></center></br>
+        <center><img src="zdjecia_gabor/5,8,39,39-zlaczone.png" width="823" height="392" /></center></br>
 
     Następnie przefiltrowałyśmy wybrane obrazy za pomocą banku filtrów Gabora, wykorzystując kody z wyżej podanej strony.
     <br />
@@ -97,14 +97,8 @@ wyróżnić teksturę o specyficznych właściwościach. Po dalszej obróbce, pr
     Sample use: <br />
     featureVector = gaborFeatures(img,gaborArray,4,4);
 
-
-
-
-
-
-    <center><img src="gfrentgen.png" width="823" height="392" /></center></br>
-    <center><img src="gfrozakolor.png" width="823" height="392" /></center></br>
-
+    <center><img src="zdjecia_gabor/gfrentgen.png" width="823" height="392" /></center></br>
+    <center><img src="zdjecia_gabor/gfrozakolor.png" width="823" height="392" /></center></br>
 
     <br />
     Niestety obrazy są właściwie nieczytelne. 
@@ -119,18 +113,18 @@ wyróżnić teksturę o specyficznych właściwościach. Po dalszej obróbce, pr
         featureVector = gaborFeatures(img,gaborArray,30,30);</br>
          
 
-    <center><img src="1,1,9,9-noga.png" width="823" height="392" /></center></br>
-    <center><img src="1,1,9,9-noga-feature.png" width="281" height="260" /></center></br>
+    <center><img src="zdjecia_gabor/1,1,9,9-noga.png" width="823" height="392" /></center></br>
+    <center><img src="zdjecia_gabor/1,1,9,9-noga-feature.png" width="281" height="260" /></center></br>
         gaborArray = gaborFilterBank(1,1,15,15);</br>
-    <center><img src="gfrozakolor2.png" width="823" height="392" /></center></br>
+    <center><img src="zdjecia_gabor/gfrozakolor2.png" width="823" height="392" /></center></br>
         gaborArray = gaborFilterBank(1,1,11,11);</br>
-    <center><img src="gfrozakolor3.png" width="823" height="392" /></center></br>
+    <center><img src="zdjecia_gabor/gfrozakolor3.png" width="823" height="392" /></center></br>
         featureVector = gaborFeatures(img,gaborArray,20,20);</br>
-        <center><img src="1,1,39,39-featureVector(roza,gaborArray,20,20).png" width="281" height="260" /></center></br>
+        <center><img src="zdjecia_gabor/1,1,39,39-featureVector(roza,gaborArray,20,20).png" width="281" height="260" /></center></br>
         featureVector = gaborFeatures(img,gaborArray,40,40);</br>
-        <center><img src="1,1,39,39-featureVector(roza,gaborArray,40,40).png" width="281" height="260" /></center></br>
+        <center><img src="zdjecia_gabor/1,1,39,39-featureVector(roza,gaborArray,40,40).png" width="281" height="260" /></center></br>
         featureVector = gaborFeatures(img,gaborArray,100,100)</br>
-        <center><img src="1,1,39,39-featureVector(roza,gaborArray,100,100).png" width="281" height="260" /></center></br>
+        <center><img src="zdjecia_gabor/1,1,39,39-featureVector(roza,gaborArray,100,100).png" width="281" height="260" /></center></br>
 
 
     <br />
@@ -148,7 +142,7 @@ wyróżnić teksturę o specyficznych właściwościach. Po dalszej obróbce, pr
   
  <div id="stopka">
  <br/>
-        <h3> Rekonstrukcja i analiza obrazów 2017 </h3>
+        <h3> Rekonstrukcja i analiza obrazów</h3>
     </div>
 </body>
 </html>
