@@ -6,7 +6,7 @@ I am Biomedical engineer, with specialization in Informatics in medicine. I'm es
 # Tools
 
 * Testlink
-* Jira
+* Jira 
 * Enterprise Architect
 * Microsoft Office 365 
   
@@ -23,13 +23,13 @@ I am Biomedical engineer, with specialization in Informatics in medicine. I'm es
 
 # Courses, lectures, webinars
 
-* Zostań testerem 
+* Zostań testerem`#c5f015`
 * CodeSkill
 * Introduction to Data Analysis using Excel
 
 
 # Projects
-* [Game in Java](https://github.com/mallop/portfolio/tree/mallop-project1/Java_game/GameJava)
+* [Game in Java](https://github.com/mallop/portfolio/tree/mallop-project1/Java_game/GameJava)`#c5f015`
 * [Game in c++](https://github.com/mallop/portfolio/tree/mallop-project1/c%2B%2B_game)
 * [Test cases - MrBuggy2](https://drive.google.com/file/d/1E-_3FLRhfSbGkS0DSqDQFVh0lGu5IhHQ/view?usp=sharing)
 * [Trainable COSFIRE filters for vessel delineation with application to retinal images (Matlab, html)](https://github.com/mallop/portfolio/tree/mallop-project1/Matlab_cosfire_filters/Matlab_cosfire_filters) 
