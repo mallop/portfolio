@@ -11,26 +11,26 @@ I am Biomedical engineer, with specialization in Informatics in medicine. I'm es
   
 
 # Skills
-<ul>
-   <li> English B2 </li>
-   <li> SQL </li>
-   <li> UML </li>
-   <li> creating test cases </li>
-   <li> reporting bugs </li>
-   <li> Java </li>
-</ul>
+
+* English B2
+* SQL 
+* UML
+* creating test cases
+* reporting bugs
+* Java
 
 # Courses, lectures, webinars
-<ul>
-   <li> Zostań testerem </li>
-   <li> CodeSkill </li>
-   <li> Introduction to Data Analysis using Excel </li>
-</ul>
+
+* Zostań testerem 
+* CodeSkill
+* Introduction to Data Analysis using Excel
+
 
 
 # Projects
-<ul>
-   <li> <a href= "https://github.com/mallop/portfolio/tree/mallop-project1/Java_game/GameJava"> Game in Java </a> </li>
+* [Game in Java]("https://github.com/mallop/portfolio/tree/mallop-project1/Java_game/GameJava")
+   
+   <ul>
    <li> <a href= "https://github.com/mallop/portfolio/tree/mallop-project1/c%2B%2B_game"> Game in c++ </a> </li>
     <li> <a href= "https://drive.google.com/file/d/1E-_3FLRhfSbGkS0DSqDQFVh0lGu5IhHQ/view?usp=sharing"> Test cases (MrBuggy2)</a> </li>
    <li> <a href= "https://github.com/mallop/portfolio/tree/mallop-project1/Matlab_feature_extraction/Matlab_feature_extraction">Feature extraction based on the fingerprints </a> </li>
