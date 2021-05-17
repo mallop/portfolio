@@ -1,7 +1,7 @@
 # PORTFOLIO 
 
 # About me
-I am Biomedical engineer, with specialization in Informatics in medicine. I'm especially interested in software testing, business analysis. On this site I want to share my experience in IT since college.
+I am Biomedical engineer, with specialization in Informatics in medicine. I'm especially interested in software testing, business analysis. On this site I want to share my experience in IT.
 
 # Tools
 
